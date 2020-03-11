@@ -1,0 +1,25 @@
+<div id="head">
+
+    <div id="title">
+        <h1>Carga de Productos</h1>
+    </div>
+</div>
+<div id="body">
+
+    <div id="form">
+        <div id="labels" align="right">
+            Código: <br><br> Descripción: <br><br> Cantidad: <br><br> Precio de Compra: <br><br> Precio de Venta: <br><br> Proveedor:
+        </div>
+        <div id="inputs">
+            <input type="number" id="txtCode" size="20" [(ngModel)]="txtCode"> <br><br>
+            <input type="text" id="txtDescription" size="20" [(ngModel)]="txtDescription"> <br><br>
+            <input type="number" id="txtQuantity" size="20" [(ngModel)]="txtQuantity"> <br><br>
+            <input type="number" id="txtBuyPrice" size="20" [(ngModel)]="txtBuyPrice"> <br><br>
+            <input type="number" id="txtSellPrice" size="20" [(ngModel)]="txtSellPrice"> <br><br>
+            <input type="text" id="txtProvider" size="20" [(ngModel)]="txtProvider">
+        </div>
+        <div class="block"><button class="button" [disabled]="!txtCode || !txtSellPrice || !txtDescription">¡Cargar!</button><button class="clear" (click)="clear()">Limpiar</button></div>
+        <div class="block"></div>
+        <!-- <div class="block"><button class="button error">¡Cargar!</button></div> -->
+    </div>
+</div>

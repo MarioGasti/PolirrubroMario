@@ -1,16 +1,17 @@
 const { app, BrowserWindow } = require('electron');
+require('electron-debug')({ showDevTools: true });
 
 let win;
 
 function createWindow() {
     win = new BrowserWindow({
-        width: 600,
-        height: 600,
+        width: 1280,
+        height: 720,
         backgroundColor: '#ffffff',
-        icon: `file://${ __dirname }/dist/assets/logo.png`
+        icon: `file://${ __dirname }/dist/PolirrubroMario/assets/logo.png`
     });
 
-    win.loadURL(`file://${ __dirname }/dist/index.html`);
+    win.loadURL(`file://${ __dirname }/dist/PolirrubroMario/index.html`);
 
     win.on('closed', _ => {
         win = null;

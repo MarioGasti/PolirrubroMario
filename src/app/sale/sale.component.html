@@ -1,0 +1,24 @@
+<div id="head">
+
+    <div id="title">
+        <h1>Venta</h1>
+    </div>
+</div>
+<div id="body">
+
+    <div id="form">
+        <div id="labels" align="right">
+            Código: <br><br> Descripción: <br><br> Precio:
+        </div>
+        <div id="inputs">
+            <input type="number" id="txtCode" size="20" [(ngModel)]="txtCode"> <br><br>
+            <p>ñlaksjdfñlkajdsf</p>
+            <p>añldskjfñlkdaj</p>
+            <!-- <input type="text" id="txtDescription" size="20" [(ngModel)]="txtDescription"> <br><br> -->
+            <!-- <input type="number" id="txtSellPrice" size="20" [(ngModel)]="txtSellPrice"> <br><br> -->
+        </div>
+        <div class="block"><button class="button" [disabled]="!txtCode">¡Cargar!</button><button class="clear" (click)="clear()">Limpiar</button></div>
+        <div class="block"></div>
+        <!-- <div class="block"><button class="button error">¡Cargar!</button></div> -->
+    </div>
+</div>
